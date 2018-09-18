@@ -17,7 +17,7 @@ def fft_spectrum(im):
 
 def fft_spectrum_mag(im):
     f = im.copy()
-    f = np.log(np.abs(f))*20
+    f = 20 * np.log(np.abs(f))
     return f
 
 def fft_inversa(im):
